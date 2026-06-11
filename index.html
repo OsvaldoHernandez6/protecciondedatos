@@ -655,6 +655,112 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
 @media (max-width: 400px) {
   .nav-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══════════════ S6 MARKETING DIGITAL REDESIGN ═══════════════ */
+.s6-alarm-banner{display:flex;align-items:center;gap:20px;background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 40%,#0d3460 100%);border-radius:20px;padding:28px 32px;margin-bottom:36px;box-shadow:0 8px 40px rgba(15,23,42,.28);position:relative;overflow:hidden;}
+.s6-alarm-banner::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:rgba(255,255,255,.04);border-radius:50%;}
+.s6-alarm-icon{font-size:44px;flex-shrink:0;}
+
+.s6-alarm-title{font-size:1.25rem;font-weight:800;color:#fff;line-height:1.3;margin-bottom:4px;}
+.s6-alarm-sub{font-size:.92rem;color:rgba(255,200,200,.75);}
+.s6-countdown{margin-left:auto;text-align:center;background:rgba(0,0,0,.35);border-radius:14px;padding:14px 22px;flex-shrink:0;}
+.s6-countdown-num{font-size:2.4rem;font-weight:900;color:#93c5fd;line-height:1;}
+.s6-countdown-label{font-size:.72rem;color:rgba(255,200,200,.7);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
+
+.s6-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px;}
+@media(max-width:700px){.s6-stats-grid{grid-template-columns:repeat(2,1fr);}}
+.s6-stat-card{background:#fff;border-radius:16px;padding:24px 20px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,.08);border-top:4px solid #2563eb;transition:transform .2s;}
+.s6-stat-card:hover{transform:translateY(-3px);}
+.s6-stat-num{font-size:2rem;font-weight:900;color:#2563eb;line-height:1;margin-bottom:8px;}
+.s6-stat-label{font-size:.8rem;color:#64748b;line-height:1.4;}
+
+.s6-cta-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;border-radius:16px;padding:24px 28px;margin:28px 0;flex-wrap:wrap;}
+.s6-cta-banner.primary{background:linear-gradient(135deg,#2563eb,#1d4ed8);}
+.s6-cta-banner.dark{background:linear-gradient(135deg,#0f172a,#1e3a5f);}
+.s6-cta-text{flex:1;}
+.s6-cta-text strong{display:block;font-size:1.08rem;color:#fff;margin-bottom:4px;}
+.s6-cta-text span{font-size:.88rem;color:rgba(255,255,255,.75);}
+.s6-cta-btn{background:rgba(255,255,255,.15);color:#fff;font-weight:700;font-size:.9rem;padding:12px 22px;border-radius:10px;white-space:nowrap;backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.25);cursor:pointer;transition:background .2s;}
+.s6-cta-btn:hover{background:rgba(255,255,255,.25);}
+
+.s6-h3{font-size:1.2rem;font-weight:800;color:#0f172a;margin:40px 0 20px;padding-left:12px;border-left:4px solid #2563eb;}
+
+.s6-semaforo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px;}
+@media(max-width:700px){.s6-semaforo-grid{grid-template-columns:1fr;}}
+.s6-sem-col{border-radius:16px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,.06);border:1px solid #e2e8f0;}
+.s6-sem-header{padding:14px 18px;font-weight:800;font-size:.95rem;text-align:center;}
+.s6-sem-col.red .s6-sem-header{background:#fecaca;color:#7f1d1d;}
+.s6-sem-col.yellow .s6-sem-header{background:#fde68a;color:#78350f;}
+.s6-sem-col.green .s6-sem-header{background:#bbf7d0;color:#14532d;}
+.s6-sem-body{padding:16px;background:#fff;}
+.s6-sem-item{padding:8px 12px;margin-bottom:6px;border-radius:8px;font-size:.84rem;line-height:1.4;}
+.s6-sem-col.red .s6-sem-item{background:#fff5f5;color:#991b1b;border-left:3px solid #fecaca;}
+.s6-sem-col.yellow .s6-sem-item{background:#fffdf0;color:#92400e;border-left:3px solid #fde68a;}
+.s6-sem-col.green .s6-sem-item{background:#f0fdf4;color:#166534;border-left:3px solid #bbf7d0;}
+
+.s6-channel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:36px;}
+@media(max-width:700px){.s6-channel-grid{grid-template-columns:1fr;}}
+.s6-channel-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);border:1px solid #e2e8f0;}
+.s6-ch-header{display:flex;align-items:center;gap:12px;padding:16px 20px;background:#1e3a5f;}
+.s6-ch-icon{font-size:1.4rem;}
+.s6-ch-name{font-weight:800;font-size:1rem;color:#fff;flex:1;}
+.s6-ch-badge{font-size:.68rem;font-weight:700;padding:4px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;}
+.s6-ch-badge.critical{background:#7c3aed;color:#fff;}
+.s6-ch-badge.danger{background:#d97706;color:#fff;}
+.s6-ch-badge.warning{background:#d97706;color:#fff;}
+.s6-ch-body{padding:20px;}
+.s6-ch-problem{background:#fefce8;border-radius:10px;padding:14px;margin-bottom:14px;}
+.s6-ch-problem-label{font-size:.68rem;font-weight:800;color:#92400e;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;}
+.s6-ch-problem p{font-size:.85rem;color:#78350f;margin:0;line-height:1.5;}
+.s6-ch-rules{margin-bottom:14px;}
+.s6-ch-rule{font-size:.83rem;color:#334155;padding:5px 0;border-bottom:1px solid #f1f5f9;line-height:1.4;}
+.s6-ch-rule:last-child{border-bottom:none;}
+.s6-ch-action{background:#eff6ff;border-radius:10px;padding:12px 14px;font-size:.83rem;color:#1e3a5f;line-height:1.5;}
+
+.s6-intl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:36px;}
+@media(max-width:700px){.s6-intl-grid{grid-template-columns:1fr;}}
+.s6-intl-region{border-radius:18px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,.07);border:1px solid #e2e8f0;}
+.s6-intl-flag{padding:14px 20px;font-size:1rem;font-weight:700;}
+.s6-intl-region.eu .s6-intl-flag{background:#dbeafe;color:#1e3a8a;}
+.s6-intl-region.us .s6-intl-flag{background:#fee2e2;color:#7f1d1d;}
+.s6-intl-region.br .s6-intl-flag{background:#dcfce7;color:#14532d;}
+.s6-intl-lead{padding:12px 20px;font-size:.83rem;color:#475569;border-bottom:1px solid #e2e8f0;background:#f8fafc;}
+.s6-fine-list{background:#fff;padding:16px 20px;}
+.s6-fine-item{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f1f5f9;}
+.s6-fine-item:last-child{border-bottom:none;}
+.s6-fine-amount{font-size:1.05rem;font-weight:800;color:#b91c1c;white-space:nowrap;min-width:80px;}
+.s6-fine-detail{font-size:.8rem;color:#334155;line-height:1.45;}
+.s6-intl-lesson{padding:14px 20px;font-size:.82rem;line-height:1.5;}
+.s6-intl-region.eu .s6-intl-lesson{background:#eff6ff;color:#1e3a8a;}
+.s6-intl-region.us .s6-intl-lesson{background:#fff5f5;color:#7f1d1d;}
+.s6-intl-region.br .s6-intl-lesson{background:#f0fdf4;color:#14532d;}
+
+.s6-learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:36px;}
+@media(max-width:700px){.s6-learn-grid{grid-template-columns:1fr;}}
+.s6-learn-card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 2px 16px rgba(0,0,0,.08);border:1px solid #e2e8f0;transition:transform .2s;}
+.s6-learn-card:hover{transform:translateY(-3px);}
+.s6-learn-card.highlight{background:linear-gradient(135deg,#0f172a,#1a3c6e);border:none;}
+.s6-learn-card.highlight .s6-learn-title{color:#fff;}
+.s6-learn-card.highlight p{color:rgba(255,255,255,.75);}
+.s6-learn-icon{font-size:2rem;margin-bottom:10px;}
+.s6-learn-title{font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:8px;}
+.s6-learn-card p{font-size:.85rem;color:#64748b;line-height:1.6;margin:0;}
+
+.s6-final-cta{background:linear-gradient(135deg,#1e3a5f 0%,#1a3c6e 50%,#0f2d4a 100%);border-radius:24px;padding:40px 36px;text-align:center;margin-top:8px;}
+.s6-final-cta-title{font-size:1.6rem;font-weight:900;color:#fff;margin-bottom:10px;}
+.s6-final-cta-sub{font-size:.95rem;color:rgba(255,230,230,.85);margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.6;}
+.s6-final-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.s6-btn-primary{background:#fff;color:#1e3a5f;font-weight:800;font-size:.95rem;padding:14px 28px;border-radius:12px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;}
+.s6-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2);}
+.s6-btn-secondary{background:rgba(255,255,255,.15);color:#fff;font-weight:700;font-size:.95rem;padding:14px 28px;border-radius:12px;border:2px solid rgba(255,255,255,.35);cursor:pointer;backdrop-filter:blur(4px);transition:background .2s;}
+.s6-btn-secondary:hover{background:rgba(255,255,255,.25);}
+
+
+/* Context divider */
+.context-divider{display:flex;align-items:center;gap:16px;padding:32px 0 8px;margin:8px 0;}
+.context-divider-line{flex:1;height:1px;background:#e2e8f0;}
+.context-divider-label{font-size:.78rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.12em;white-space:nowrap;}
+
 </style>
 </head>
 <body>
@@ -825,6 +931,502 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
     </a>
 
   </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECCIONES DE CONTENIDO
+══════════════════════════════════════════ -->
+<div class="content-wrap">
+
+<!-- ──────────────── S6 ──────────────── -->
+<section class="section" id="s6">
+  <div class="section-header">
+    <div class="section-icon-wrap" style="background:#fff0f1">📣</div>
+    <div>
+      <div class="section-title" style="color:#e63946">Marketing Digital</div>
+      <div class="section-subtitle">Guía práctica: qué cambia, cómo adaptarse y qué aprender de otros países</div>
+    </div>
+  </div>
+
+  <!-- ALARM BANNER -->
+  <div class="s6-alarm-banner">
+    <div class="s6-alarm-icon">📅</div>
+    <div class="s6-alarm-content">
+      <div class="s6-alarm-title">Tu marketing digital necesita actualizarse para diciembre 2026</div>
+      <div class="s6-alarm-sub">La Ley 21.719 establece nuevas reglas claras. Conocerlas a tiempo es la ventaja.</div>
+    </div>
+    <div class="s6-countdown">
+      <div class="s6-countdown-num" id="mktDays">—</div>
+      <div class="s6-countdown-label">días para cumplir</div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var d=new Date('2026-12-01'),n=new Date(),diff=Math.ceil((d-n)/(1000*60*60*24));
+    var el=document.getElementById('mktDays');
+    if(el&&diff>0)el.textContent=diff;
+    else if(el)el.textContent='0';
+  })();
+  </script>
+
+  <!-- BIG STATS -->
+  <div class="s6-stats-grid">
+    <div class="s6-stat-card">
+      <div class="s6-stat-num">90%</div>
+      <div class="s6-stat-label">de empresas necesitan revisar al menos una práctica de marketing</div>
+    </div>
+    <div class="s6-stat-card">
+      <div class="s6-stat-num">€1.200M</div>
+      <div class="s6-stat-label">multa récord a Meta en Europa — referencia de lo que puede costar no cumplir</div>
+    </div>
+    <div class="s6-stat-card">
+      <div class="s6-stat-num">−60%</div>
+      <div class="s6-stat-label">caída en audiencias de remarketing al implementarse leyes similares en Europa</div>
+    </div>
+    <div class="s6-stat-card">
+      <div class="s6-stat-num">5.000 UTM</div>
+      <div class="s6-stat-label">multa máxima por infracción grave (~$380 millones CLP)</div>
+    </div>
+  </div>
+
+  <!-- SEMÁFORO -->
+  <h3 class="s6-h3">🚦 Semáforo del marketing digital — ¿qué puedes seguir haciendo?</h3>
+  <div class="s6-semaforo-grid">
+    <div class="s6-sem-col red">
+      <div class="s6-sem-header">🔴 No permitido desde dic 2026</div>
+      <div class="s6-sem-body">
+        <div class="s6-sem-item">Comprar bases de datos de terceros</div>
+        <div class="s6-sem-item">Pixels y tracking sin banner de consentimiento</div>
+        <div class="s6-sem-item">Emails con opt-in implícito o pre-marcado</div>
+        <div class="s6-sem-item">WhatsApp masivo sin autorización explícita</div>
+        <div class="s6-sem-item">Compartir datos con Meta/Google sin base legal</div>
+        <div class="s6-sem-item">Datos de menores sin autorización parental</div>
+      </div>
+    </div>
+    <div class="s6-sem-col yellow">
+      <div class="s6-sem-header">🟡 Requiere adaptación</div>
+      <div class="s6-sem-body">
+        <div class="s6-sem-item">Bases existentes sin registro de consentimiento</div>
+        <div class="s6-sem-item">Remarketing (requiere banner de cookies válido)</div>
+        <div class="s6-sem-item">CRM sin campo de origen y fecha del contacto</div>
+        <div class="s6-sem-item">Emails transaccionales + promo sin separar</div>
+        <div class="s6-sem-item">Automatizaciones sin validación de permisos</div>
+        <div class="s6-sem-item">Formularios con texto ambiguo sobre el uso</div>
+      </div>
+    </div>
+    <div class="s6-sem-col green">
+      <div class="s6-sem-header">🟢 PERMITIDO con cumplimiento</div>
+      <div class="s6-sem-body">
+        <div class="s6-sem-item">Email a clientes actuales (interés legítimo)</div>
+        <div class="s6-sem-item">Remarketing con consentimiento explícito</div>
+        <div class="s6-sem-item">Publicidad contextual (sin tracking personal)</div>
+        <div class="s6-sem-item">Contenido orgánico y SEO</div>
+        <div class="s6-sem-item">First-party data correctamente consentido</div>
+        <div class="s6-sem-item">Listas con doble opt-in documentado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CANALES -->
+  <h3 class="s6-h3">📡 Canal por canal: qué cambia exactamente</h3>
+  <div class="s6-channel-grid">
+
+    <div class="s6-channel-card">
+      <div class="s6-ch-header">
+        <span class="s6-ch-icon">📧</span>
+        <span class="s6-ch-name">Email Marketing</span>
+        <span class="s6-ch-badge critical">Cambio importante</span>
+      </div>
+      <div class="s6-ch-body">
+        <div class="s6-ch-problem">
+          <div class="s6-ch-problem-label">El problema hoy</div>
+          <p>La mayoría de las bases chilenas fueron construidas con opt-in implícito, suscripciones al comprar sin checkbox separado, o listas compradas. Todo eso deja de ser válido.</p>
+        </div>
+        <div class="s6-ch-rules">
+          <div class="s6-ch-rule">✓ Consentimiento explícito y específico para email</div>
+          <div class="s6-ch-rule">✓ Registro verificable: fecha, hora, IP, texto del aviso</div>
+          <div class="s6-ch-rule">✓ Unsubscribe inmediato (no "puede tardar 10 días")</div>
+          <div class="s6-ch-rule">✓ Consentimiento separado por finalidad (newsletter ≠ ofertas)</div>
+        </div>
+        <div class="s6-ch-action">
+          <strong>Acción urgente:</strong> Lanzar campaña de re-permiso antes de noviembre 2026. Quienes no confirmen activamente, salen de la lista.
+        </div>
+      </div>
+    </div>
+
+    <div class="s6-channel-card">
+      <div class="s6-ch-header">
+        <span class="s6-ch-icon">💬</span>
+        <span class="s6-ch-name">WhatsApp Marketing</span>
+        <span class="s6-ch-badge danger">Requiere atención</span>
+      </div>
+      <div class="s6-ch-body">
+        <div class="s6-ch-problem">
+          <div class="s6-ch-problem-label">El problema hoy</div>
+          <p>En Chile es común agregar números a grupos, enviar catálogos masivos o usar tools no oficiales. Nada de eso tiene consentimiento documentado.</p>
+        </div>
+        <div class="s6-ch-rules">
+          <div class="s6-ch-rule">✓ El número de celular es un dato personal protegido</div>
+          <div class="s6-ch-rule">✓ "Me dio su número en la tienda" no es válido</div>
+          <div class="s6-ch-rule">✓ Checkbox separado: "Acepto mensajes por WhatsApp"</div>
+          <div class="s6-ch-rule">✓ La plataforma no te exime — tú eres el responsable</div>
+        </div>
+        <div class="s6-ch-action">
+          <strong>Acción urgente:</strong> Auditar cada número. Sin evidencia de consentimiento explícito para WhatsApp, no puedes usarlo.
+        </div>
+      </div>
+    </div>
+
+    <div class="s6-channel-card">
+      <div class="s6-ch-header">
+        <span class="s6-ch-icon">🎯</span>
+        <span class="s6-ch-name">Remarketing y Retargeting</span>
+        <span class="s6-ch-badge warning">Requiere adaptación</span>
+      </div>
+      <div class="s6-ch-body">
+        <div class="s6-ch-problem">
+          <div class="s6-ch-problem-label">El problema hoy</div>
+          <p>El pixel de Meta/Google se activa al entrar al sitio sin preguntar. El usuario queda en audiencias de remarketing sin saber ni consentir.</p>
+        </div>
+        <div class="s6-ch-rules">
+          <div class="s6-ch-rule">✓ Pixel solo activa tras consentimiento explícito de cookies</div>
+          <div class="s6-ch-rule">✓ Si rechaza el banner: no entra en audiencias</div>
+          <div class="s6-ch-rule">✓ 30–50% de usuarios rechazará — tu audiencia se reduce</div>
+          <div class="s6-ch-rule">✓ Implementar Consent Mode v2 para datos modelados</div>
+        </div>
+        <div class="s6-ch-action">
+          <strong>Compensación:</strong> First-party data, Customer Match, SEO y contenido orgánico como alternativas estratégicas.
+        </div>
+      </div>
+    </div>
+
+    <div class="s6-channel-card">
+      <div class="s6-ch-header">
+        <span class="s6-ch-icon">🗃️</span>
+        <span class="s6-ch-name">CRM y Bases de Datos</span>
+        <span class="s6-ch-badge critical">Necesita revisión</span>
+      </div>
+      <div class="s6-ch-body">
+        <div class="s6-ch-problem">
+          <div class="s6-ch-problem-label">El problema hoy</div>
+          <p>La mayoría de los CRMs chilenos no tienen campo "origen del consentimiento". Nadie sabe de dónde vino el contacto, qué aceptó, ni cuándo.</p>
+        </div>
+        <div class="s6-ch-rules">
+          <div class="s6-ch-rule">✓ Agregar: fuente, fecha de consentimiento y texto del aviso</div>
+          <div class="s6-ch-rule">✓ Bases compradas = responsabilidad total de quien las usa</div>
+          <div class="s6-ch-rule">✓ Sin consentimiento verificable = no se puede usar</div>
+          <div class="s6-ch-rule">✓ Segmentar: válido / interés legítimo / sin base legal</div>
+        </div>
+        <div class="s6-ch-action">
+          <strong>Acción urgente:</strong> Auditar el CRM ahora. Contactos sin base legal → campaña de re-permiso o eliminación antes de diciembre.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CASOS INTERNACIONALES -->
+  <h3 class="s6-h3">🌍 Casos reales: lo que pasó cuando otros países implementaron leyes similares</h3>
+
+  <div class="s6-intl-grid">
+    <div class="s6-intl-region eu">
+      <div class="s6-intl-flag">🇪🇺 Europa — GDPR 2018</div>
+      <div class="s6-intl-lead">La ley más influyente del mundo en privacidad. Chile tomó sus fundamentos directamente de ella.</div>
+      <div class="s6-fine-list">
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">€1.200M</div>
+          <div class="s6-fine-detail"><strong>Meta (2023)</strong> — transferir datos de europeos a EE.UU. sin garantías adecuadas</div>
+        </div>
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">€746M</div>
+          <div class="s6-fine-detail"><strong>Amazon (2021)</strong> — publicidad dirigida sin consentimiento adecuado</div>
+        </div>
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">€390M</div>
+          <div class="s6-fine-detail"><strong>Meta (2023)</strong> — exigir aceptar publicidad para poder usar Facebook e Instagram</div>
+        </div>
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">€225M</div>
+          <div class="s6-fine-detail"><strong>WhatsApp (2021)</strong> — falta de transparencia en el uso de datos de usuarios</div>
+        </div>
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">€150M</div>
+          <div class="s6-fine-detail"><strong>Google (2021)</strong> — dark pattern: banner diseñado para que aceptar sea más fácil que rechazar</div>
+        </div>
+      </div>
+      <div class="s6-intl-lesson">📉 Las listas de email cayeron 40–70% al sanearse. Pero el ROI subió 2–3x con bases más comprometidas.</div>
+    </div>
+
+    <div class="s6-intl-region us">
+      <div class="s6-intl-flag">🇺🇸 California — CCPA/CPRA 2020</div>
+      <div class="s6-intl-lead">La ley de privacidad más estricta de EE.UU. con derechos muy similares a la Ley 21.719.</div>
+      <div class="s6-fine-list">
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">USD $1.2M</div>
+          <div class="s6-fine-detail"><strong>Sephora (2022)</strong> — primer gran caso: compartía datos con plataformas de publicidad sin considerarlo "venta de datos" y no respetaba solicitudes de opt-out</div>
+        </div>
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">Investigados</div>
+          <div class="s6-fine-detail"><strong>Spotify, H&amp;M, Domino's</strong> — rastreo entre sitios para retargeting sin mecanismos de opt-out adecuados</div>
+        </div>
+      </div>
+      <div class="s6-intl-lesson">🔑 Las empresas implementaron "Privacy Centers". Agencias reentrenaron equipos completos en gestión de datos.</div>
+    </div>
+
+    <div class="s6-intl-region br">
+      <div class="s6-intl-flag">🇧🇷 Brasil — LGPD 2020</div>
+      <div class="s6-intl-lead">La referencia más cercana: mercado similar, cultura latina, mismo contexto de marketing digital.</div>
+      <div class="s6-fine-list">
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">R$10.4M</div>
+          <div class="s6-fine-detail"><strong>Serasa Experian (2023)</strong> — vender datos de 223 millones de personas sin base legal. El equivalente chileno podría ser cualquier empresa que use bases compradas.</div>
+        </div>
+        <div class="s6-fine-item">
+          <div class="s6-fine-amount">Suspensión</div>
+          <div class="s6-fine-detail"><strong>WhatsApp (2021)</strong> — suspendido temporalmente por compartir datos con Facebook sin consentimiento explícito</div>
+        </div>
+      </div>
+      <div class="s6-intl-lesson">⏳ El mercado tardó ~18 meses en estabilizarse. Las empresas que empezaron antes evitaron multas y ganaron ventaja.</div>
+    </div>
+  </div>
+
+  <!-- APRENDIZAJES -->
+  <h3 class="s6-h3">📌 Lo que Chile puede aprender</h3>
+  <div class="s6-learn-grid">
+    <div class="s6-learn-card">
+      <div class="s6-learn-icon">📉</div>
+      <div class="s6-learn-title">Las listas caen, la calidad sube</div>
+      <p>En Europa y Brasil, las bases cayeron 40–70% al sanearse. Pero el ROI de email subió 2–3x porque las listas resultantes eran de personas que realmente querían recibir comunicaciones.</p>
+    </div>
+    <div class="s6-learn-card highlight">
+      <div class="s6-learn-icon">🏆</div>
+      <div class="s6-learn-title">El first-party data es el nuevo petróleo</div>
+      <p>Las marcas que construyeron datos propios (registro, fidelización, encuestas, contenido de valor) antes del cambio tuvieron ventaja competitiva duradera en sus mercados.</p>
+    </div>
+    <div class="s6-learn-card">
+      <div class="s6-learn-icon">⏰</div>
+      <div class="s6-learn-title">Quien espera, paga más</div>
+      <p>En todos los mercados, las empresas que esperaron hasta el último momento hicieron cambios de emergencia con mayor costo y mayor riesgo de error. Adaptarse toma entre 6 y 18 meses.</p>
+    </div>
+    <div class="s6-learn-card">
+      <div class="s6-learn-icon">🤝</div>
+      <div class="s6-learn-title">La confianza es un diferenciador real</div>
+      <p>En mercados maduros post-GDPR, los consumidores valoran la transparencia. Las marcas que la comunican activamente tienen mejores tasas de conversión y mayor lealtad.</p>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+<!-- ──────────────── S8 ──────────────── -->
+<section class="section" id="s8">
+  <div class="section-header">
+    <div class="section-icon-wrap" style="background:#f0fdf4">🎯</div>
+    <div>
+      <div class="section-title" style="color:#059669">Campañas Digitales</div>
+      <div class="section-subtitle">Google, Meta, LinkedIn, TikTok y Programmatic bajo la nueva ley</div>
+    </div>
+  </div>
+
+  <div class="platform-grid">
+    <div class="platform-card">
+      <div class="platform-header google">🔵 Google Ads</div>
+      <div class="platform-body">
+        <div class="platform-row"><span class="pl">Conversiones</span><span>Requieren consentimiento para cookies. Consent Mode v2 es esencial.</span></div>
+        <div class="platform-row"><span class="pl">Enhanced Conv.</span><span>Datos de clientes a Google solo si el usuario consintió explícitamente.</span></div>
+        <div class="platform-row"><span class="pl">Customer Match</span><span>Solo usar listas con consentimiento verificable para publicidad de terceros.</span></div>
+        <div class="platform-row"><span class="pl">Remarketing</span><span>La tag solo puede activarse si el usuario aceptó cookies de marketing.</span></div>
+        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>No implementar Consent Mode = trackear sin consentimiento = infracción.</span></div>
+        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Consent Mode v2 + CMP certificado + modelado de conversiones.</span></div>
+      </div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-header meta">🔵 Meta Ads (Facebook/Instagram)</div>
+      <div class="platform-body">
+        <div class="platform-row"><span class="pl">Pixel</span><span>Solo dispara para usuarios que aceptaron cookies de marketing.</span></div>
+        <div class="platform-row"><span class="pl">Conv. API</span><span>Datos servidor-a-Meta igualmente requieren base legal y consentimiento.</span></div>
+        <div class="platform-row"><span class="pl">Custom Aud.</span><span>Subir listas de emails solo con consentimiento verificado para publicidad digital.</span></div>
+        <div class="platform-row"><span class="pl">Lookalikes</span><span>Permitido si la semilla (lista fuente) tiene consentimiento válido.</span></div>
+        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>Subir bases compradas sin consentimiento para publicidad es infracción grave.</span></div>
+        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Pixel + CAPI con Consent Mode. Auditar Custom Audiences existentes.</span></div>
+      </div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-header linkedin">🔵 LinkedIn Ads</div>
+      <div class="platform-body">
+        <div class="platform-row"><span class="pl">Insight Tag</span><span>Igual que otros pixels, requiere consentimiento previo de cookies.</span></div>
+        <div class="platform-row"><span class="pl">Matched Aud.</span><span>Listas de contactos solo con consentimiento documentado.</span></div>
+        <div class="platform-row"><span class="pl">Lead Gen Forms</span><span>Formularios nativos con datos de chilenos quedan sujetos a la ley.</span></div>
+        <div class="platform-row"><span class="pl">✅ Favorable</span><span>LinkedIn B2B tiende a tener bases más limpias y propósito más claro.</span></div>
+        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Documentar propósito de uso de datos al importar listas al CRM.</span></div>
+      </div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-header tiktok">⚫ TikTok Ads</div>
+      <div class="platform-body">
+        <div class="platform-row"><span class="pl">Pixel TikTok</span><span>Requiere consentimiento de cookies antes de dispararse.</span></div>
+        <div class="platform-row"><span class="pl">Custom Aud.</span><span>Datos de clientes solo con consentimiento verificado.</span></div>
+        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>TikTok es masiva entre menores. Especial cuidado con datos de personas bajo 18 años.</span></div>
+        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Events API + consentimiento. Excluir audiencias de menores.</span></div>
+      </div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-header prog">🟣 Publicidad Programática</div>
+      <div class="platform-body">
+        <div class="platform-row"><span class="pl">DSP / SSP</span><span>Deben cumplir estándar IAB TCF (Transparency &amp; Consent Framework).</span></div>
+        <div class="platform-row"><span class="pl">Retargeting</span><span>Condicionado al consentimiento de cookies del publisher de origen.</span></div>
+        <div class="platform-row"><span class="pl">DMP / CDP</span><span>El uso para segmentar audiencias requiere base legal válida en origen.</span></div>
+        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>Comprar segmentos de terceros sin verificar origen del consentimiento es riesgo alto.</span></div>
+        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Exigir declaración de cumplimiento. Priorizar first-party data.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box purple">
+    <span class="info-box-icon">🔮</span>
+    <div class="info-box-content">
+      <strong>El futuro es el First-Party Data</strong>
+      <p>La ley refuerza la tendencia global de depender menos de cookies de terceros. Las empresas que construyan una base de datos propia, bien consentida y bien gestionada, tendrán ventaja competitiva desde 2026.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ──────────────── S9 ──────────────── -->
+<section class="section" id="s9">
+  <div class="section-header">
+    <div class="section-icon-wrap" style="background:#f0f9ff">🌐</div>
+    <div>
+      <div class="section-title" style="color:#0ea5e9">Sitios Web</div>
+      <div class="section-subtitle">Cookies, tracking, formularios, analytics y tecnologías de terceros</div>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-btn" onclick="toggleAcc(this)">🍪 Cookies y Banner de Consentimiento <span class="chevron">▼</span></button>
+      <div class="accordion-body">
+        <p>Las cookies no esenciales (analíticas, marketing, personalización) requieren consentimiento previo. El banner debe:</p>
+        <ul>
+          <li>Mostrar opciones de <strong>aceptar, rechazar o configurar</strong> antes de cargar cookies.</li>
+          <li>No usar dark patterns: el botón "Aceptar" no puede ser más visible que "Rechazar".</li>
+          <li>Permitir <strong>cambiar la decisión</strong> en cualquier momento.</li>
+          <li>No cargar cookies de marketing hasta recibir confirmación positiva.</li>
+          <li>Registrar y almacenar la decisión del usuario.</li>
+        </ul>
+        <div class="example-box"><div class="ex-label">Qué implementar</div><p>Una CMP (Consent Management Platform) como Cookiebot, OneTrust o Axeptio, compatible con IAB TCF 2.2, que registre consentimientos con fecha, hora y versión de política.</p></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-btn" onclick="toggleAcc(this)">📊 Google Analytics y Consent Mode v2 <span class="chevron">▼</span></button>
+      <div class="accordion-body">
+        <p>GA4 recopila datos de comportamiento que son datos personales (IP, identificadores). Requiere consentimiento.</p>
+        <ul>
+          <li>Implementar <strong>Google Consent Mode v2</strong> conectado con la CMP.</li>
+          <li>Activar <strong>anonimización de IP</strong> en GA4.</li>
+          <li>Usar el <strong>modelado de datos</strong> de Google para estimar comportamiento de usuarios que no consintieron.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-btn" onclick="toggleAcc(this)">📋 Formularios <span class="chevron">▼</span></button>
+      <div class="accordion-body">
+        <ul>
+          <li>Todo formulario debe enlazar a la política de privacidad y especificar el propósito.</li>
+          <li>Para emails de marketing: checkbox independiente y no premarcado.</li>
+          <li>El formulario de contacto básico no requiere consentimiento de marketing, pero sí debe informar el tratamiento.</li>
+          <li>Los chatbots que recopilan datos tienen las mismas reglas.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-btn" onclick="toggleAcc(this)">🔥 Heatmaps y Session Recording <span class="chevron">▼</span></button>
+      <div class="accordion-body">
+        <p>Herramientas como Hotjar, Clarity o Lucky Orange pueden constituir tratamiento de datos personales, especialmente si captura contenido ingresado en formularios.</p>
+        <ul>
+          <li>Incluirlas en las cookies de análisis del banner de consentimiento.</li>
+          <li>Configurar para que <strong>enmascaren campos de formularios</strong> automáticamente.</li>
+          <li>Solo activarlas para usuarios que aceptaron cookies analíticas.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-btn" onclick="toggleAcc(this)">🔗 Scripts e Integraciones de Terceros <span class="chevron">▼</span></button>
+      <div class="accordion-body">
+        <p>Cualquier script que recopile datos del usuario (Pixels, scripts de chat, Intercom, HubSpot, etc.) debe controlarse con el sistema de consentimiento.</p>
+        <ul>
+          <li>Usar Google Tag Manager integrado con la CMP para cargar condicionalmente los scripts.</li>
+          <li>Auditar todos los scripts activos y clasificarlos por categoría de cookie.</li>
+        </ul>
+        <div class="example-box"><div class="ex-label">Regla práctica</div><p>Si el script "le avisa a alguien más" sobre el comportamiento del usuario, necesita consentimiento. Si solo funciona en tu propio servidor, puede tener base de interés legítimo.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box green">
+    <span class="info-box-icon">✅</span>
+    <div class="info-box-content">
+      <strong>Implementación prioritaria en el sitio</strong>
+      <p>1. CMP integrada con GTM · 2. Google Consent Mode v2 · 3. Política de privacidad actualizada · 4. Formularios con checkboxes explícitos · 5. Auditoría de scripts de terceros.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ──────────────── S10 ──────────────── -->
+<section class="section" id="s10">
+  <div class="section-header">
+    <div class="section-icon-wrap" style="background:#f0fdf4">✅</div>
+    <div>
+      <div class="section-title" style="color:#16a34a">Checklist para Empresas</div>
+      <div class="section-subtitle">Acciones concretas ordenadas por nivel de madurez</div>
+    </div>
+  </div>
+
+  <h3>🟢 Nivel Básico — Mínimo obligatorio</h3>
+  <ul class="checklist">
+    <li><span class="check-level lv-basic">Básico</span><div>Actualizar la <strong>Política de Privacidad</strong> en lenguaje simple explicando todos los tratamientos.</div></li>
+    <li><span class="check-level lv-basic">Básico</span><div>Implementar un <strong>banner de cookies</strong> con opciones de aceptar, rechazar y configurar (sin dark patterns).</div></li>
+    <li><span class="check-level lv-basic">Básico</span><div>Revisar todos los <strong>formularios</strong> y agregar checkboxes explícitos para emails de marketing.</div></li>
+    <li><span class="check-level lv-basic">Básico</span><div>Crear un <strong>canal de contacto</strong> visible para ejercer derechos ARCO-P (email dedicado o formulario web).</div></li>
+    <li><span class="check-level lv-basic">Básico</span><div>Establecer un <strong>protocolo</strong> para responder solicitudes de derechos en máximo 30 días hábiles.</div></li>
+    <li><span class="check-level lv-basic">Básico</span><div>Auditar <strong>bases de datos</strong> y eliminar o reconfirmar contactos sin consentimiento válido.</div></li>
+    <li><span class="check-level lv-basic">Básico</span><div>Verificar que los <strong>envíos de email</strong> incluyan enlace de desuscripción funcional.</div></li>
+    <li><span class="check-level lv-basic">Básico</span><div>Revisar que <strong>WhatsApp y SMS</strong> solo lleguen a personas con consentimiento explícito.</div></li>
+  </ul>
+
+  <h3>🟡 Nivel Intermedio — Cumplimiento robusto</h3>
+  <ul class="checklist">
+    <li><span class="check-level lv-mid">Intermedio</span><div>Implementar <strong>Google Consent Mode v2</strong> conectado con la CMP.</div></li>
+    <li><span class="check-level lv-mid">Intermedio</span><div>Firmar <strong>contratos de encargo (DPA)</strong> con todos los proveedores que procesan datos: CRM, email, analytics, publicidad, cloud.</div></li>
+    <li><span class="check-level lv-mid">Intermedio</span><div>Crear el <strong>Registro de Actividades de Tratamiento (RAT)</strong> documentando qué datos, para qué, quién accede y con qué base legal.</div></li>
+    <li><span class="check-level lv-mid">Intermedio</span><div>Implementar un <strong>proceso de notificación de brechas</strong> con plazos definidos (idealmente 72 horas).</div></li>
+    <li><span class="check-level lv-mid">Intermedio</span><div>Auditar y clasificar todas las <strong>cookies y scripts</strong>, integrando GTM con la CMP.</div></li>
+    <li><span class="check-level lv-mid">Intermedio</span><div><strong>Capacitar al equipo</strong>: marketing, TI, ventas y atención al cliente.</div></li>
+    <li><span class="check-level lv-mid">Intermedio</span><div>Establecer una <strong>política de retención de datos</strong>: cuánto tiempo se guardan y qué pasa al vencerse.</div></li>
+    <li><span class="check-level lv-mid">Intermedio</span><div>Verificar que <strong>Custom Audiences</strong> en Meta, Google y LinkedIn se construyan con datos consentidos.</div></li>
+  </ul>
+
+  <h3>🟣 Nivel Avanzado — Excelencia y ventaja competitiva</h3>
+  <ul class="checklist">
+    <li><span class="check-level lv-adv">Avanzado</span><div>Diseñar un <strong>Programa de Compliance de Datos</strong> con Encargado de Datos (DPO) y auditorías periódicas.</div></li>
+    <li><span class="check-level lv-adv">Avanzado</span><div>Realizar <strong>Evaluaciones de Impacto (DPIA)</strong> para tratamientos de alto riesgo: IA, scoring, perfilamiento masivo.</div></li>
+    <li><span class="check-level lv-adv">Avanzado</span><div>Construir una estrategia de <strong>First-Party Data</strong> con CDP propio, datos consentidos y gestionados.</div></li>
+    <li><span class="check-level lv-adv">Avanzado</span><div>Implementar <strong>Privacy by Design</strong>: revisión de privacidad obligatoria antes de lanzar cualquier funcionalidad.</div></li>
+    <li><span class="check-level lv-adv">Avanzado</span><div>Certificar un <strong>Modelo de Prevención de Infracciones</strong> ante la Agencia (reduce sanciones ante incidentes).</div></li>
+    <li><span class="check-level lv-adv">Avanzado</span><div>Implementar <strong>encriptación y seudonimización</strong> de datos en bases y sistemas internos.</div></li>
+    <li><span class="check-level lv-adv">Avanzado</span><div>Realizar <strong>pentesting y auditorías de seguridad</strong> periódicas en sistemas con datos personales.</div></li>
+  </ul>
+</section>
+
+
+<div class="context-divider">
+  <div class="context-divider-line"></div>
+  <span class="context-divider-label">Marco Legal y Contexto</span>
+  <div class="context-divider-line"></div>
+</div>
 
   <!-- NAV SECUNDARIA: CONTEXTO LEGAL -->
   <div class="nav-section-label secondary-label">
@@ -889,12 +1491,6 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
     </a>
 
   </div>
-</section>
-
-<!-- ══════════════════════════════════════════
-     SECCIONES DE CONTENIDO
-══════════════════════════════════════════ -->
-<div class="content-wrap">
 
 <!-- ──────────────── S1 ──────────────── -->
 <section class="section" id="s1">
@@ -968,6 +1564,7 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
     </div>
   </div>
 </section>
+
 
 <!-- ──────────────── S2 ──────────────── -->
 <section class="section" id="s2">
@@ -1044,6 +1641,7 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
   </div>
 </section>
 
+
 <!-- ──────────────── S3 ──────────────── -->
 <section class="section" id="s3">
   <div class="section-header">
@@ -1072,6 +1670,7 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
     </table>
   </div>
 </section>
+
 
 <!-- ──────────────── S4 ──────────────── -->
 <section class="section" id="s4">
@@ -1144,6 +1743,7 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
     </div>
   </div>
 </section>
+
 
 <!-- ──────────────── S5 ──────────────── -->
 <section class="section" id="s5">
@@ -1231,251 +1831,6 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
   </div>
 </section>
 
-<!-- ──────────────── S6 ──────────────── -->
-<section class="section" id="s6">
-  <div class="section-header">
-    <div class="section-icon-wrap" style="background:#fff0f1">📣</div>
-    <div>
-      <div class="section-title" style="color:#e63946">Marketing Digital</div>
-      <div class="section-subtitle">Guía exhaustiva: qué cambia, cómo adaptarse y qué hicieron otros países</div>
-    </div>
-  </div>
-
-  <div class="info-box red">
-    <span class="info-box-icon">⚠️</span>
-    <div class="info-box-content">
-      <strong>El marketing digital en Chile tiene fecha de vencimiento</strong>
-      <p>La forma en que el 90% de las empresas chilenas hacen marketing digital hoy es incompatible con la nueva ley. Bases compradas, pixels sin consentimiento, emails sin opt-in doble y remarketing libre quedan prohibidos o restringidos desde diciembre 2026.</p>
-    </div>
-  </div>
-
-  <!-- CANAL POR CANAL -->
-  <h3>Canal por canal: qué cambia exactamente</h3>
-  <div class="accordion">
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">📧 Email Marketing — El canal que más cambia <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p><strong>El problema actual:</strong> La mayoría de las bases de datos en Chile fueron construidas con opt-in implícito (formularios sin checkbox), suscripciones al comprar sin consentimiento separado, o directamente compradas a terceros. Todo eso deja de ser válido.</p>
-        <p><strong>Lo que exige la nueva ley:</strong></p>
-        <ul>
-          <li>Consentimiento explícito, específico para el canal email, con texto claro de qué recibirá la persona.</li>
-          <li>Registro verificable: fecha, hora, IP, texto exacto del aviso, versión de la política de privacidad.</li>
-          <li>El botón de unsubscribe debe funcionar de forma inmediata. No "puede tardar hasta 10 días hábiles".</li>
-          <li>Si usas interés legítimo como base (clientes existentes), debes documentarlo y ofrecer siempre opt-out.</li>
-          <li>Cada finalidad requiere consentimiento separado: newsletter ≠ ofertas ≠ contenido educativo.</li>
-        </ul>
-        <p><strong>Qué hacer con la base existente:</strong> Antes de diciembre 2026 debes lanzar una <em>campaña de re-permiso (re-optin)</em>: un email donde el contacto confirma activamente que quiere seguir recibiendo tus comunicaciones. Quienes no confirmen deben salir de la lista.</p>
-        <div class="example-box"><div class="ex-label">Ejemplo de asunto para campaña de re-permiso</div><p>"Queremos seguir escribiéndote — pero solo si tú quieres. Haz clic para confirmar tu suscripción antes del 30 de noviembre."</p></div>
-        <div class="intl-box">
-          <div class="intl-flag">🇪🇺</div>
-          <div>
-            <strong>Qué pasó en Europa con el GDPR (2018):</strong> Las empresas europeas perdieron entre el 40% y el 70% de sus listas al pedir re-permiso. Sin embargo, las tasas de apertura subieron de un promedio de 18% a 30–40%, y las conversiones mejoraron porque la base era más comprometida. MailChimp, HubSpot y Klaviyo reportaron que sus clientes europeos con bases "saneadas" tuvieron ROI de email marketing 2-3x más alto que antes.
-          </div>
-        </div>
-        <div class="intl-box">
-          <div class="intl-flag">🇧🇷</div>
-          <div>
-            <strong>Qué pasó en Brasil con la LGPD (2020):</strong> Plataformas como RD Station (el HubSpot brasileño) lanzaron funcionalidades de "Central de Consentimiento" para documentar y gestionar permisos. Las empresas que sanearon sus bases antes del plazo evitaron sanciones y construyeron ventajas competitivas.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">💬 WhatsApp Marketing — zona de alto riesgo <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p><strong>El problema actual:</strong> En Chile es común agregar números de clientes a grupos de WhatsApp, enviar catálogos o mensajes masivos con herramientas no oficiales (WhatsApp Business API de terceros), o simplemente enviar mensajes desde el celular del vendedor. Todo esto sin consentimiento documentado.</p>
-        <p><strong>Lo que exige la nueva ley:</strong></p>
-        <ul>
-          <li>El número de celular es un dato personal. Usarlo para comunicaciones de marketing requiere consentimiento explícito para ese canal específico.</li>
-          <li>"Me dio su número en la tienda" no es suficiente. Necesitas evidencia de que autorizó recibir mensajes de marketing por WhatsApp.</li>
-          <li>Usar listas de broadcast o grupos masivos sin consentimiento puede configurar una infracción grave.</li>
-          <li>Las plataformas de WhatsApp masivo (ej.: Treble, Cliengo, Gupshup) no te eximen: la responsabilidad del consentimiento es tuya.</li>
-        </ul>
-        <p><strong>Cómo hacerlo bien:</strong> Agregar al formulario de captura un checkbox separado: "Acepto recibir comunicaciones por WhatsApp". Documentar en el CRM el número, fecha y forma en que se capturó el consentimiento.</p>
-        <div class="intl-box">
-          <div class="intl-flag">🇧🇷</div>
-          <div>
-            <strong>Brasil 2021:</strong> WhatsApp fue suspendido temporalmente en Brasil por un juez por compartir datos de usuarios con Facebook sin consentimiento claro. La sanción no fue por el marketing en sí, sino por el flujo de datos entre plataformas — exactamente el tipo de integración que la Ley 21.719 también regula en Chile.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">📲 SMS Marketing <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p>El SMS tiene la misma lógica que WhatsApp: el número es un dato personal y enviar mensajes de marketing requiere consentimiento previo, específico para ese canal.</p>
-        <ul>
-          <li>Muchas empresas chilenas envían SMS transaccionales (OTP, confirmaciones) y aprovechan el mismo número para mensajes promocionales. Eso requiere consentimiento separado.</li>
-          <li>Las plataformas de SMS masivo (Infobip, Twilio, etc.) suelen ofrecer campos de consentimiento — úsalos.</li>
-          <li>El opt-out por SMS (responder "STOP") debe procesarse de inmediato y documentarse.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">🗃️ Bases de Datos y CRM — el activo más en riesgo <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p><strong>El problema más frecuente:</strong> La mayoría de los CRMs de empresas chilenas contienen miles de contactos sin campo "origen del consentimiento". Nadie sabe de dónde vino ese contacto, qué aceptó, ni cuándo.</p>
-        <p><strong>Compra de bases de datos:</strong> Es la práctica de mayor riesgo. La empresa que usa la base es plenamente responsable aunque no la haya creado. "El proveedor me aseguró que estaban bien" no es una defensa válida ante la Agencia. Si no puedes mostrar el consentimiento original de cada contacto, no puedes usar esa base.</p>
-        <p><strong>Cómo sanear el CRM:</strong></p>
-        <ul>
-          <li>Agregar campos: Fuente del contacto, Fecha de consentimiento, Texto del aviso, Canal consentido.</li>
-          <li>Segmentar la base en: (a) contactos con consentimiento verificable, (b) contactos con base legítima (clientes actuales), (c) contactos sin base legal.</li>
-          <li>Los contactos del grupo (c) deben recibir campaña de re-permiso o ser eliminados.</li>
-        </ul>
-        <div class="intl-box">
-          <div class="intl-flag">🇺🇸</div>
-          <div>
-            <strong>California CCPA — Sephora 2022:</strong> La marca de cosméticos fue multada en USD $1,2 millones por no respetar las solicitudes de "Do Not Sell My Personal Information" de sus clientes. El caso evidenció que muchas empresas compartían datos con plataformas de publicidad (Meta, Google) sin considerarlo como "venta de datos". En Chile, compartir datos con plataformas para publicidad dirigida sin base legal tiene el mismo riesgo.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">🔄 Remarketing y Retargeting — depende 100% del consentimiento <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p><strong>Cómo funciona hoy:</strong> Un usuario visita tu sitio → el pixel de Meta o Google se activa → queda en una audiencia de remarketing → recibe publicidad tuya en sus redes durante días o semanas. Todo esto ocurre sin que el usuario haya dado consentimiento explícito.</p>
-        <p><strong>Con la nueva ley:</strong> El pixel no puede dispararse hasta que el usuario acepte las cookies de marketing en el banner de consentimiento. Si rechaza, no queda en la audiencia. Si acepta solo cookies analíticas, tampoco.</p>
-        <p><strong>Impacto en números:</strong> Según datos de implementaciones GDPR en Europa, entre el 30% y el 50% de los usuarios rechaza o ignora los banners de cookies. Eso significa que tu audiencia de remarketing puede reducirse a la mitad.</p>
-        <p><strong>Cómo compensar la pérdida:</strong></p>
-        <ul>
-          <li>Invertir en captura de emails y construcción de first-party data.</li>
-          <li>Usar Customer Match con bases propias bien consentidas en lugar de pixel audiences.</li>
-          <li>Trabajar el contenido orgánico y SEO para atraer tráfico que no dependa de retargeting.</li>
-          <li>Implementar Consent Mode v2 para recuperar señales modeladas de usuarios que no consintieron.</li>
-        </ul>
-        <div class="intl-box">
-          <div class="intl-flag">🇪🇺</div>
-          <div>
-            <strong>Europa post-GDPR:</strong> Las agencias europeas reportaron caídas de hasta 60% en audiencias de remarketing los primeros meses. Las marcas que compensaron con estrategias de first-party data (lead magnets, loyalty programs, preferencias de usuario) recuperaron y en muchos casos superaron el rendimiento previo con bases más pequeñas pero más cualificadas.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">🤖 Automatización de Marketing — flujos y triggers <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p>Los flujos automáticos de email, lead nurturing y secuencias de onboarding deben construirse respetando el consentimiento en cada paso:</p>
-        <ul>
-          <li><strong>Trigger basado en comportamiento web</strong> (ej.: "visitó página de producto → enviar email"): Solo puede activarse si el usuario dio consentimiento para tracking y para recibir emails.</li>
-          <li><strong>Lead scoring automático:</strong> Si el score determina acciones sobre el contacto (cambio de estado, asignación a ventas), debes tener base legal para procesar esa información.</li>
-          <li><strong>Flujos de abandono de carrito:</strong> El email se puede enviar si el usuario está en tu lista con consentimiento. El retargeting por pixel asociado requiere consentimiento de cookies.</li>
-          <li><strong>Integraciones CRM-Ads:</strong> Sincronizar contactos del CRM a Meta/Google Audiences solo con datos que tengan consentimiento verificado para publicidad de terceros.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- LECCIONES DE OTROS PAÍSES -->
-  <h3>🌍 Lecciones de otros países — qué pasó cuando implementaron leyes similares</h3>
-
-  <div class="intl-grid">
-    <div class="intl-country-card">
-      <div class="intl-country-header eu">🇪🇺 Europa — GDPR (2018)</div>
-      <div class="intl-country-body">
-        <p class="intl-lead">El Reglamento General de Protección de Datos es la ley más influyente del mundo en privacidad. Chile tomó muchos elementos de ella para la Ley 21.719.</p>
-        <p><strong>Lo que pasó con las empresas:</strong></p>
-        <ul>
-          <li>Las listas de email en Europa cayeron un 40–70% tras las campañas de re-permiso. Pero las tasas de apertura subieron de ~18% a ~35–40%.</li>
-          <li>El mercado de Consent Management Platforms (CMP) pasó de casi cero a USD $2.000 millones en 2023.</li>
-          <li>Google y Meta tuvieron que rediseñar completamente su modelo de publicidad para usuarios europeos.</li>
-          <li>Meta creó un "modelo de suscripción" en Europa (pagar para no ver publicidad) como alternativa al consentimiento publicitario.</li>
-        </ul>
-        <p><strong>Multas más relevantes para marketing:</strong></p>
-        <ul>
-          <li>🔴 <strong>Meta — €1.200 millones (2023):</strong> Por transferir datos de usuarios europeos a servidores de EE.UU. sin garantías adecuadas.</li>
-          <li>🔴 <strong>Meta — €390 millones (2023):</strong> Por exigir a los usuarios aceptar publicidad personalizada como condición de uso de Facebook e Instagram.</li>
-          <li>🔴 <strong>Amazon — €746 millones (2021):</strong> Por mostrar publicidad dirigida sin consentimiento adecuado de los usuarios.</li>
-          <li>🔴 <strong>Google — €150 millones (2021):</strong> Por diseñar el banner de cookies de forma que era más fácil aceptar que rechazar (dark pattern).</li>
-          <li>🔴 <strong>WhatsApp — €225 millones (2021):</strong> Por falta de transparencia sobre cómo usaba los datos de los usuarios.</li>
-        </ul>
-        <p><strong>Lección para Chile:</strong> Las plataformas internacionales no están exentas. Si operan en Chile con usuarios chilenos, deben cumplir — y en Europa han pagado multas históricas por no hacerlo.</p>
-      </div>
-    </div>
-
-    <div class="intl-country-card">
-      <div class="intl-country-header us">🇺🇸 California — CCPA / CPRA (2020–2023)</div>
-      <div class="intl-country-body">
-        <p class="intl-lead">La California Consumer Privacy Act es la ley de privacidad más estricta de EE.UU. y ha sido modelo para otras regulaciones americanas.</p>
-        <p><strong>Derechos clave similares a Chile:</strong></p>
-        <ul>
-          <li>Derecho a saber qué datos tiene la empresa.</li>
-          <li>Derecho a borrar sus datos.</li>
-          <li>"Do Not Sell My Personal Information" — botón obligatorio en el sitio.</li>
-          <li>Desde 2023 (CPRA): también "Do Not Share" para publicidad dirigida entre plataformas.</li>
-        </ul>
-        <p><strong>Casos de enforcement en marketing:</strong></p>
-        <ul>
-          <li>🔴 <strong>Sephora — USD $1,2 millones (2022):</strong> Primer gran caso de enforcement. Compartía datos de clientes con plataformas de publicidad sin considerarlo como "venta de datos". No respetó las solicitudes de opt-out. Tuvo que implementar el botón "Do Not Sell" y un programa de cumplimiento.</li>
-          <li>🔴 <strong>Spotify, H&M, Domino's:</strong> Investigados por rastreo de usuarios entre sitios para retargeting sin mecanismos adecuados de opt-out.</li>
-        </ul>
-        <p><strong>Cómo se adaptó el marketing en California:</strong></p>
-        <ul>
-          <li>Las empresas implementaron "Privacy Centers" donde el usuario puede gestionar sus preferencias.</li>
-          <li>Se popularizó el "Global Privacy Control" (GPC) — señal del browser que automáticamente comunica preferencias de privacidad a los sitios.</li>
-          <li>Agencias de publicidad tuvieron que reentrenar a todos sus equipos en gestión de datos.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="intl-country-card">
-      <div class="intl-country-header br">🇧🇷 Brasil — LGPD (2020)</div>
-      <div class="intl-country-body">
-        <p class="intl-lead">La Lei Geral de Proteção de Dados es la referencia más cercana para Chile: mercado similar en tamaño, cultura latina, mismo contexto de marketing digital.</p>
-        <p><strong>Lo que vivió el mercado brasileño:</strong></p>
-        <ul>
-          <li>Las agencias de marketing digital brasileñas tuvieron que revisar todos sus contratos con clientes para incluir cláusulas de responsabilidad compartida sobre el uso de datos.</li>
-          <li>Plataformas como RD Station (CRM/automación) y Rock Content (contenido) lanzaron funcionalidades específicas de compliance antes del plazo.</li>
-          <li>Las empresas de ecommerce enfrentaron el mayor impacto: formularios de checkout, programas de fidelización y remarketing debieron rediseñarse.</li>
-          <li>Muchas PYMEs brasileñas se apoyaron en plantillas de política de privacidad y consentimiento desarrolladas por asociaciones como IAB Brasil.</li>
-        </ul>
-        <p><strong>Casos relevantes:</strong></p>
-        <ul>
-          <li>🔴 <strong>WhatsApp suspendido (2021):</strong> Un juez federal suspendió temporalmente el servicio por compartir datos de usuarios con Facebook/Meta sin consentimiento explícito. Se levantó la suspensión a los pocos días, pero marcó la importancia de los flujos de datos entre plataformas.</li>
-          <li>🔴 <strong>Serasa Experian — R$10,4 millones (2023):</strong> Multada por tratar datos personales de 223 millones de brasileños sin base legal adecuada y venderlos a terceros para publicidad.</li>
-        </ul>
-        <p><strong>Lección para Chile:</strong> El mercado brasileño tardó ~18 meses en estabilizarse. Las empresas que empezaron antes tuvieron ventaja. Las que esperaron hasta el último momento pagaron multas o perdieron clientes por falta de confianza.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- QUÉ APRENDER -->
-  <h3>📌 Lo que Chile puede aprender</h3>
-  <div class="cards-grid">
-    <div class="card teal">
-      <div class="card-icon">📉</div>
-      <div class="card-title">Las listas caen, la calidad sube</div>
-      <p>En Europa y Brasil, las bases de email cayeron un 40–70% al sanearse. Pero el ROI de email marketing subió 2–3x porque las bases resultantes eran de personas que realmente querían recibir comunicaciones.</p>
-    </div>
-    <div class="card primary">
-      <div class="card-icon">🏆</div>
-      <div class="card-title">El first-party data es el nuevo petróleo</div>
-      <p>Las marcas que invirtieron en construir datos propios (registro, programas de fidelización, encuestas, contenido de valor) antes del cambio normativo tuvieron ventaja competitiva duradera.</p>
-    </div>
-    <div class="card amber">
-      <div class="card-icon">⏰</div>
-      <div class="card-title">Quien espera, paga más</div>
-      <p>En todos los mercados, las empresas que esperaron hasta el último momento tuvieron que hacer cambios de emergencia, con mayor costo y mayor riesgo de error. El proceso de cumplimiento toma entre 6 y 18 meses.</p>
-    </div>
-    <div class="card accent">
-      <div class="card-icon">🤝</div>
-      <div class="card-title">La confianza es diferenciador</div>
-      <p>En mercados maduros post-GDPR, los consumidores valoran activamente la transparencia de datos. Las marcas que la comunican bien tienen mejores tasas de conversión y mayor lealtad.</p>
-    </div>
-  </div>
-
-  <div class="info-box yellow">
-    <span class="info-box-icon">🔎</span>
-    <div class="info-box-content">
-      <strong>¿Qué pasa con mi base de datos existente?</strong>
-      <p>Antes de diciembre 2026 debes auditarla. Si no cuenta con consentimiento válido según los nuevos estándares, tienes dos opciones: <strong>(1) Campaña de re-permiso</strong> — enviar un email pidiendo confirmación activa. Quienes no confirmen, salen. <strong>(2) Eliminar</strong> los contactos sin base legal. Usar una base "sucia" desde el 1 dic 2026 es una infracción que puede resultar en multas graves.</p>
-    </div>
-  </div>
-</section>
 
 <!-- ──────────────── S7 ──────────────── -->
 <section class="section" id="s7">
@@ -1521,204 +1876,6 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
   </div>
 </section>
 
-<!-- ──────────────── S8 ──────────────── -->
-<section class="section" id="s8">
-  <div class="section-header">
-    <div class="section-icon-wrap" style="background:#f0fdf4">🎯</div>
-    <div>
-      <div class="section-title" style="color:#059669">Campañas Digitales</div>
-      <div class="section-subtitle">Google, Meta, LinkedIn, TikTok y Programmatic bajo la nueva ley</div>
-    </div>
-  </div>
-
-  <div class="platform-grid">
-    <div class="platform-card">
-      <div class="platform-header google">🔵 Google Ads</div>
-      <div class="platform-body">
-        <div class="platform-row"><span class="pl">Conversiones</span><span>Requieren consentimiento para cookies. Consent Mode v2 es esencial.</span></div>
-        <div class="platform-row"><span class="pl">Enhanced Conv.</span><span>Datos de clientes a Google solo si el usuario consintió explícitamente.</span></div>
-        <div class="platform-row"><span class="pl">Customer Match</span><span>Solo usar listas con consentimiento verificable para publicidad de terceros.</span></div>
-        <div class="platform-row"><span class="pl">Remarketing</span><span>La tag solo puede activarse si el usuario aceptó cookies de marketing.</span></div>
-        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>No implementar Consent Mode = trackear sin consentimiento = infracción.</span></div>
-        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Consent Mode v2 + CMP certificado + modelado de conversiones.</span></div>
-      </div>
-    </div>
-    <div class="platform-card">
-      <div class="platform-header meta">🔵 Meta Ads (Facebook/Instagram)</div>
-      <div class="platform-body">
-        <div class="platform-row"><span class="pl">Pixel</span><span>Solo dispara para usuarios que aceptaron cookies de marketing.</span></div>
-        <div class="platform-row"><span class="pl">Conv. API</span><span>Datos servidor-a-Meta igualmente requieren base legal y consentimiento.</span></div>
-        <div class="platform-row"><span class="pl">Custom Aud.</span><span>Subir listas de emails solo con consentimiento verificado para publicidad digital.</span></div>
-        <div class="platform-row"><span class="pl">Lookalikes</span><span>Permitido si la semilla (lista fuente) tiene consentimiento válido.</span></div>
-        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>Subir bases compradas sin consentimiento para publicidad es infracción grave.</span></div>
-        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Pixel + CAPI con Consent Mode. Auditar Custom Audiences existentes.</span></div>
-      </div>
-    </div>
-    <div class="platform-card">
-      <div class="platform-header linkedin">🔵 LinkedIn Ads</div>
-      <div class="platform-body">
-        <div class="platform-row"><span class="pl">Insight Tag</span><span>Igual que otros pixels, requiere consentimiento previo de cookies.</span></div>
-        <div class="platform-row"><span class="pl">Matched Aud.</span><span>Listas de contactos solo con consentimiento documentado.</span></div>
-        <div class="platform-row"><span class="pl">Lead Gen Forms</span><span>Formularios nativos con datos de chilenos quedan sujetos a la ley.</span></div>
-        <div class="platform-row"><span class="pl">✅ Favorable</span><span>LinkedIn B2B tiende a tener bases más limpias y propósito más claro.</span></div>
-        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Documentar propósito de uso de datos al importar listas al CRM.</span></div>
-      </div>
-    </div>
-    <div class="platform-card">
-      <div class="platform-header tiktok">⚫ TikTok Ads</div>
-      <div class="platform-body">
-        <div class="platform-row"><span class="pl">Pixel TikTok</span><span>Requiere consentimiento de cookies antes de dispararse.</span></div>
-        <div class="platform-row"><span class="pl">Custom Aud.</span><span>Datos de clientes solo con consentimiento verificado.</span></div>
-        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>TikTok es masiva entre menores. Especial cuidado con datos de personas bajo 18 años.</span></div>
-        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Events API + consentimiento. Excluir audiencias de menores.</span></div>
-      </div>
-    </div>
-    <div class="platform-card">
-      <div class="platform-header prog">🟣 Publicidad Programática</div>
-      <div class="platform-body">
-        <div class="platform-row"><span class="pl">DSP / SSP</span><span>Deben cumplir estándar IAB TCF (Transparency &amp; Consent Framework).</span></div>
-        <div class="platform-row"><span class="pl">Retargeting</span><span>Condicionado al consentimiento de cookies del publisher de origen.</span></div>
-        <div class="platform-row"><span class="pl">DMP / CDP</span><span>El uso para segmentar audiencias requiere base legal válida en origen.</span></div>
-        <div class="platform-row"><span class="pl">⚠️ Riesgo</span><span>Comprar segmentos de terceros sin verificar origen del consentimiento es riesgo alto.</span></div>
-        <div class="platform-row"><span class="pl">💡 Práctica</span><span>Exigir declaración de cumplimiento. Priorizar first-party data.</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="info-box purple">
-    <span class="info-box-icon">🔮</span>
-    <div class="info-box-content">
-      <strong>El futuro es el First-Party Data</strong>
-      <p>La ley refuerza la tendencia global de depender menos de cookies de terceros. Las empresas que construyan una base de datos propia, bien consentida y bien gestionada, tendrán ventaja competitiva desde 2026.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ──────────────── S9 ──────────────── -->
-<section class="section" id="s9">
-  <div class="section-header">
-    <div class="section-icon-wrap" style="background:#f0f9ff">🌐</div>
-    <div>
-      <div class="section-title" style="color:#0ea5e9">Sitios Web</div>
-      <div class="section-subtitle">Cookies, tracking, formularios, analytics y tecnologías de terceros</div>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">🍪 Cookies y Banner de Consentimiento <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p>Las cookies no esenciales (analíticas, marketing, personalización) requieren consentimiento previo. El banner debe:</p>
-        <ul>
-          <li>Mostrar opciones de <strong>aceptar, rechazar o configurar</strong> antes de cargar cookies.</li>
-          <li>No usar dark patterns: el botón "Aceptar" no puede ser más visible que "Rechazar".</li>
-          <li>Permitir <strong>cambiar la decisión</strong> en cualquier momento.</li>
-          <li>No cargar cookies de marketing hasta recibir confirmación positiva.</li>
-          <li>Registrar y almacenar la decisión del usuario.</li>
-        </ul>
-        <div class="example-box"><div class="ex-label">Qué implementar</div><p>Una CMP (Consent Management Platform) como Cookiebot, OneTrust o Axeptio, compatible con IAB TCF 2.2, que registre consentimientos con fecha, hora y versión de política.</p></div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">📊 Google Analytics y Consent Mode v2 <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p>GA4 recopila datos de comportamiento que son datos personales (IP, identificadores). Requiere consentimiento.</p>
-        <ul>
-          <li>Implementar <strong>Google Consent Mode v2</strong> conectado con la CMP.</li>
-          <li>Activar <strong>anonimización de IP</strong> en GA4.</li>
-          <li>Usar el <strong>modelado de datos</strong> de Google para estimar comportamiento de usuarios que no consintieron.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">📋 Formularios <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <ul>
-          <li>Todo formulario debe enlazar a la política de privacidad y especificar el propósito.</li>
-          <li>Para emails de marketing: checkbox independiente y no premarcado.</li>
-          <li>El formulario de contacto básico no requiere consentimiento de marketing, pero sí debe informar el tratamiento.</li>
-          <li>Los chatbots que recopilan datos tienen las mismas reglas.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">🔥 Heatmaps y Session Recording <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p>Herramientas como Hotjar, Clarity o Lucky Orange pueden constituir tratamiento de datos personales, especialmente si captura contenido ingresado en formularios.</p>
-        <ul>
-          <li>Incluirlas en las cookies de análisis del banner de consentimiento.</li>
-          <li>Configurar para que <strong>enmascaren campos de formularios</strong> automáticamente.</li>
-          <li>Solo activarlas para usuarios que aceptaron cookies analíticas.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-btn" onclick="toggleAcc(this)">🔗 Scripts e Integraciones de Terceros <span class="chevron">▼</span></button>
-      <div class="accordion-body">
-        <p>Cualquier script que recopile datos del usuario (Pixels, scripts de chat, Intercom, HubSpot, etc.) debe controlarse con el sistema de consentimiento.</p>
-        <ul>
-          <li>Usar Google Tag Manager integrado con la CMP para cargar condicionalmente los scripts.</li>
-          <li>Auditar todos los scripts activos y clasificarlos por categoría de cookie.</li>
-        </ul>
-        <div class="example-box"><div class="ex-label">Regla práctica</div><p>Si el script "le avisa a alguien más" sobre el comportamiento del usuario, necesita consentimiento. Si solo funciona en tu propio servidor, puede tener base de interés legítimo.</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="info-box green">
-    <span class="info-box-icon">✅</span>
-    <div class="info-box-content">
-      <strong>Implementación prioritaria en el sitio</strong>
-      <p>1. CMP integrada con GTM · 2. Google Consent Mode v2 · 3. Política de privacidad actualizada · 4. Formularios con checkboxes explícitos · 5. Auditoría de scripts de terceros.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ──────────────── S10 ──────────────── -->
-<section class="section" id="s10">
-  <div class="section-header">
-    <div class="section-icon-wrap" style="background:#f0fdf4">✅</div>
-    <div>
-      <div class="section-title" style="color:#16a34a">Checklist para Empresas</div>
-      <div class="section-subtitle">Acciones concretas ordenadas por nivel de madurez</div>
-    </div>
-  </div>
-
-  <h3>🟢 Nivel Básico — Mínimo obligatorio</h3>
-  <ul class="checklist">
-    <li><span class="check-level lv-basic">Básico</span><div>Actualizar la <strong>Política de Privacidad</strong> en lenguaje simple explicando todos los tratamientos.</div></li>
-    <li><span class="check-level lv-basic">Básico</span><div>Implementar un <strong>banner de cookies</strong> con opciones de aceptar, rechazar y configurar (sin dark patterns).</div></li>
-    <li><span class="check-level lv-basic">Básico</span><div>Revisar todos los <strong>formularios</strong> y agregar checkboxes explícitos para emails de marketing.</div></li>
-    <li><span class="check-level lv-basic">Básico</span><div>Crear un <strong>canal de contacto</strong> visible para ejercer derechos ARCO-P (email dedicado o formulario web).</div></li>
-    <li><span class="check-level lv-basic">Básico</span><div>Establecer un <strong>protocolo</strong> para responder solicitudes de derechos en máximo 30 días hábiles.</div></li>
-    <li><span class="check-level lv-basic">Básico</span><div>Auditar <strong>bases de datos</strong> y eliminar o reconfirmar contactos sin consentimiento válido.</div></li>
-    <li><span class="check-level lv-basic">Básico</span><div>Verificar que los <strong>envíos de email</strong> incluyan enlace de desuscripción funcional.</div></li>
-    <li><span class="check-level lv-basic">Básico</span><div>Revisar que <strong>WhatsApp y SMS</strong> solo lleguen a personas con consentimiento explícito.</div></li>
-  </ul>
-
-  <h3>🟡 Nivel Intermedio — Cumplimiento robusto</h3>
-  <ul class="checklist">
-    <li><span class="check-level lv-mid">Intermedio</span><div>Implementar <strong>Google Consent Mode v2</strong> conectado con la CMP.</div></li>
-    <li><span class="check-level lv-mid">Intermedio</span><div>Firmar <strong>contratos de encargo (DPA)</strong> con todos los proveedores que procesan datos: CRM, email, analytics, publicidad, cloud.</div></li>
-    <li><span class="check-level lv-mid">Intermedio</span><div>Crear el <strong>Registro de Actividades de Tratamiento (RAT)</strong> documentando qué datos, para qué, quién accede y con qué base legal.</div></li>
-    <li><span class="check-level lv-mid">Intermedio</span><div>Implementar un <strong>proceso de notificación de brechas</strong> con plazos definidos (idealmente 72 horas).</div></li>
-    <li><span class="check-level lv-mid">Intermedio</span><div>Auditar y clasificar todas las <strong>cookies y scripts</strong>, integrando GTM con la CMP.</div></li>
-    <li><span class="check-level lv-mid">Intermedio</span><div><strong>Capacitar al equipo</strong>: marketing, TI, ventas y atención al cliente.</div></li>
-    <li><span class="check-level lv-mid">Intermedio</span><div>Establecer una <strong>política de retención de datos</strong>: cuánto tiempo se guardan y qué pasa al vencerse.</div></li>
-    <li><span class="check-level lv-mid">Intermedio</span><div>Verificar que <strong>Custom Audiences</strong> en Meta, Google y LinkedIn se construyan con datos consentidos.</div></li>
-  </ul>
-
-  <h3>🟣 Nivel Avanzado — Excelencia y ventaja competitiva</h3>
-  <ul class="checklist">
-    <li><span class="check-level lv-adv">Avanzado</span><div>Diseñar un <strong>Programa de Compliance de Datos</strong> con Encargado de Datos (DPO) y auditorías periódicas.</div></li>
-    <li><span class="check-level lv-adv">Avanzado</span><div>Realizar <strong>Evaluaciones de Impacto (DPIA)</strong> para tratamientos de alto riesgo: IA, scoring, perfilamiento masivo.</div></li>
-    <li><span class="check-level lv-adv">Avanzado</span><div>Construir una estrategia de <strong>First-Party Data</strong> con CDP propio, datos consentidos y gestionados.</div></li>
-    <li><span class="check-level lv-adv">Avanzado</span><div>Implementar <strong>Privacy by Design</strong>: revisión de privacidad obligatoria antes de lanzar cualquier funcionalidad.</div></li>
-    <li><span class="check-level lv-adv">Avanzado</span><div>Certificar un <strong>Modelo de Prevención de Infracciones</strong> ante la Agencia (reduce sanciones ante incidentes).</div></li>
-    <li><span class="check-level lv-adv">Avanzado</span><div>Implementar <strong>encriptación y seudonimización</strong> de datos en bases y sistemas internos.</div></li>
-    <li><span class="check-level lv-adv">Avanzado</span><div>Realizar <strong>pentesting y auditorías de seguridad</strong> periódicas en sistemas con datos personales.</div></li>
-  </ul>
-</section>
 
 <!-- ──────────────── S11 ──────────────── -->
 <section class="section" id="s11">
@@ -1808,6 +1965,7 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
   </div>
 </section>
 
+
 <!-- ──────────────── S12 ──────────────── -->
 <section class="section" id="s12">
   <div class="section-header">
@@ -1860,6 +2018,7 @@ tbody td:first-child { font-weight: 700; color: #1a3c6e; min-width: 110px; }
     <em>Este documento tiene fines informativos. No constituye asesoría legal. Para casos específicos, consultar con un abogado especializado.</em>
   </div>
 </section>
+
 
 </div><!-- /content-wrap -->
 
